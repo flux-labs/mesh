@@ -5,7 +5,7 @@ A collection of experimental mesh manipulation functions for Flux code blocks. T
 Calculates the area of a mesh.
 
 ### `areaOfVolume(mesh)`
-Calculates the volume of a mesh.
+Calculates the volume of a closed mesh. It will not calculate the right volume for an open mesh. 
 
 ### `orderVerticesOfMesh(mesh)`
 Returns the ordered vertices of a mesh (clockwise) as a list of points.
