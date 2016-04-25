@@ -6,3 +6,6 @@ Calculates the area of a mesh.
 
 ### `areaOfVolume(mesh)`
 Calculates the volume of a mesh.
+
+### `orderVerticesOfMesh(mesh)`
+Returns the ordered vertices of a mesh (clockwise) as a list of points.
