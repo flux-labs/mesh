@@ -28,14 +28,14 @@ function run(mesh) {
     var faces = mesh[0].faces;
     var vertices = mesh[0].vertices;
     var points;
-    var lines;
+    var lines = [];
     faces.forEach(function(face) {
         points = face.map(function(index) {
             return vertices[index];
         });
-        lines = createLines(points)
+        lines.push(createLines(points));
     });
-
+    
 return {
    boundary: lines
 };
