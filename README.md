@@ -10,5 +10,5 @@ Calculates the volume of a closed mesh. It will not calculate the right volume f
 ### `orderVerticesOfMesh(mesh)`
 Returns the ordered vertices of a mesh (clockwise) as a list of points.
 
-### `meshFacetoBoundary(mesh)`
-Returns the bounding edges of a mesh face as a list of lines.
+### `meshEdges(mesh)`
+Returns the edges of a mesh as a list of lines.
