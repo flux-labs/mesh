@@ -2,13 +2,36 @@
 A collection of experimental mesh manipulation functions for Flux code blocks. These are candidates for addition to the Flux block library. 
 
 ### `areaOfMesh(mesh)`
-Calculates the area of a mesh.
+#### parameters:
+* mesh
+
+#### returns:
+area of a mesh as a float
 
 ### `areaOfVolume(mesh)`
-Calculates the volume of a closed mesh. It will not calculate the right volume for an open mesh. 
+#### parameters:
+* mesh
+
+#### returns:
+volume of a closed mesh as a float (will not calculate the right volume for an open mesh)
 
 ### `orderVerticesOfMesh(mesh)`
-Returns the ordered vertices of a mesh (clockwise) as a list of points.
+#### parameters:
+* mesh
+
+#### returns:
+vertices of each mesh face in clockwise order as a list of points
 
 ### `meshEdges(mesh)`
-Returns the edges of a mesh as a list of lines.
+#### parameters:
+* mesh
+
+#### returns:
+all edges of each mesh face as a list of lines
+
+### `triangulateMesh(faces)`
+#### parameters:
+* mesh faces as a list of lists
+
+#### returns:
+triangulated mesh faces as a list of lists
