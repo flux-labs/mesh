@@ -8,7 +8,7 @@ A collection of experimental mesh manipulation functions for Flux code blocks. T
 #### returns:
 area of a mesh as a float
 
-### `areaOfVolume(mesh)`
+### `volumeOfMesh(mesh)`
 #### parameters:
 * mesh
 
