@@ -1,16 +1,22 @@
 'use strict';
 
 /**
- * Order the verticies of a mesh clockwise
- * @param {Mesh} Mesh object
+ * Order the vertices of a mesh clockwise
+ *
+ * @author Karen Hao <karen@flux.io>
+ * @version 0.0.1
+ *
+ * @param {Object} A mesh object
  * 
- * @return {Vertices} ordered vertices
+ * @return {Object} A return object with a "Vertices" property containing an array
+ *     of clockwise-ordered vertices for each mesh face.
  */
+
 var modeling = require('flux/modeling');
 
 function run(Mesh) {
-	var faces = Mesh[0].faces;
-	var vertices = Mesh[0].vertices;
+	var faces = Mesh.faces;
+	var vertices = Mesh.vertices;
 	var points;
 	var listOfPoints=[];
  	faces.forEach(function(face) {
