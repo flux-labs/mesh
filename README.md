@@ -28,7 +28,8 @@ vertices of each mesh face in clockwise order as a list of points
 
 #### returns:
 * `allEdges`: all edges of each mesh face as a list of lines
-* `nakedEdges`: only edges with one incident face
+* `externalEdges`: only edges with one incident face
+* `nonplanarEdges`: only edges whose two incident faces are not planar
 
 ### `triangulateMesh`
 #### parameters:
@@ -36,3 +37,10 @@ vertices of each mesh face in clockwise order as a list of points
 
 #### returns:
 triangulated mesh faces as a list of lists
+
+### `getFaceNormals`
+#### parameters:
+* `mesh`
+
+#### returns:
+normal of each face as a list of lists
