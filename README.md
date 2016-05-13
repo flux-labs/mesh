@@ -27,7 +27,8 @@ vertices of each mesh face in clockwise order as a list of points
 * `mesh`
 
 #### returns:
-all edges of each mesh face as a list of lines
+* `allEdges`: all edges of each mesh face as a list of lines
+* `nakedEdges`: only edges with one incident face
 
 ### `triangulateMesh`
 #### parameters:
