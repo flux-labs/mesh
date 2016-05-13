@@ -10,7 +10,7 @@
  * 
  * @return {Object} A return object with three properties:
  *     allEdges: an array of all edges of the mesh;
- *     nakedEdges: an array of edges with only one incident face;
+ *     externalEdges: an array of edges with only one incident face;
  *     internalEdges: an array of edges with only two incident faces
  */
 
@@ -106,7 +106,7 @@ function run(mesh) {
     });
 
     var edgesDict = getEdgesAsDict(faces);
-    var nakedEdges = [];
+    var externalEdges = [];
     var nonplanarEdges =[];
 
     for (var edges in edgesDict) {
@@ -121,7 +121,7 @@ function run(mesh) {
                 edgeVertices.push(vertices[index]);
             }
             
-            nakedEdges.push(createLineEdgeVertices(edgeVertices));
+            externalEdges.push(createLineEdgeVertices(edgeVertices));
         } else {
             var normals = [];
             var edgeVertices = [];
@@ -150,7 +150,7 @@ function run(mesh) {
     
     return {
         allEdges: allEdges,
-        externalEdges: nakedEdges,
+        externalEdges: externalEdges,
         nonplanarEdges: nonplanarEdges
     };
 }
