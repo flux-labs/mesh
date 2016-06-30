@@ -8,6 +8,13 @@ A collection of experimental mesh manipulation functions for Flux code blocks. T
 #### returns:
 area of a mesh as a float
 
+### `areaOfEachMeshSurface`
+#### parameters:
+* `mesh`
+
+#### returns:
+an array of areas for the different surfaces of a mesh
+
 ### `volumeOfMesh`
 #### parameters:
 * `mesh`
