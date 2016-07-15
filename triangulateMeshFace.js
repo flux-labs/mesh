@@ -4,23 +4,22 @@
  * Code block template.
  *
  */
-function run(faces) {
+function run(mesh) {
+	var faces = mesh.faces;
 	var triFaces=[];
 
-	for (var face of faces) {
-		if (face.length==4) {
-			var face1 = [face[0],face[1],face[2]];
-			var face2 = [face[2],face[3],face[0]];
-			triFaces.push(face1, face2);
+	for (let face of faces) {
+		while (face.length > 3) {
+			triFaces.push( [face[0],face[1],face[2]] );
+			face.splice(1,1);
 		}
-		else {
+		if (face.length == 3)
 			triFaces.push(face);
-		}
 	}
+	
+	mesh.faces = triFaces;
 
-return {
-	triangulatedFaces: triFaces
-}
+return { Out: mesh };
 }
 
 module.exports = {
