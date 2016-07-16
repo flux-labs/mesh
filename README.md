@@ -40,10 +40,11 @@ vertices of each mesh face in clockwise order as a list of points
 
 ### `triangulateMesh`
 #### parameters:
-* `faces`: mesh faces as a list of lists
+* `In`: mesh with convex faces with vertices >= 3
+(note that this algorithm only deals with convex polygons; fortunately, it seems the sketchup plugin automatically triangulates concave faces)
 
 #### returns:
-triangulated mesh faces as a list of lists
+* `Out`: mesh with triangulated faces
 
 ### `getFaceNormals`
 #### parameters:
