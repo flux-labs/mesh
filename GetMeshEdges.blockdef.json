@@ -1,0 +1,33 @@
+{
+    "Type": "query/GetMeshEdges",
+    "Description": "Find the mesh edges.",
+    "Inputs": {
+        "Mesh": {
+            "Type": "Object"
+        },
+    },
+    "Outputs": {
+        "Edges": {
+            "Type": "Object"
+        },
+    },
+    "Require": {
+        "js": {
+            "src": "GetMeshEdges.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Mesh",
+        ],
+        "OutputOrder": [
+            "Edges",
+        ]
+    },
+    "Tags": [],
+    "UserTags": []
+}

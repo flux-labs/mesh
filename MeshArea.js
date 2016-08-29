@@ -1,8 +1,14 @@
 'use strict';
 
 /**
- * Code block template.
+ * Get the area of a mesh
  *
+ * @author Karen Hao <karen@flux.io>
+ * @version 0.0.1
+ *
+ * @param {Object} A mesh object
+ * 
+ * @return {Number} Mesh area
  */
 var geom = require('genie/geom');
  

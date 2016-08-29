@@ -1,0 +1,32 @@
+{
+    "Type": "query/AreaOfMeshFaces",
+    "Description": "Find the area of each faces of a mesh.",
+    "Inputs": {
+        "Mesh": {
+            "Type": "Object"
+    },
+    "Outputs": {
+        "Areas": {
+            "Type": "[]Number"
+        },
+    },
+    "Require": {
+        "js": {
+            "src": "AreaOfMeshFaces.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Mesh",
+        ],
+        "OutputOrder": [
+            "Areas",
+        ]
+    },
+    "Tags": [],
+    "UserTags": ["Size"]
+}

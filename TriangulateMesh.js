@@ -1,9 +1,16 @@
 'use strict';
 
 /**
- * Code block template.
+ * Triangulate the quad faces of a mesh
  *
+ * @author Karen Hao <karen@flux.io>
+ * @version 0.0.1
+ *
+ * @param {Object} A mesh object
+ * 
+ * @return {Object} A mesh object w/ triangulated faces
  */
+
 function run(mesh) {
 	var faces = mesh.faces;
 	var triFaces=[];

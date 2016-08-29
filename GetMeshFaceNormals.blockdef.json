@@ -1,0 +1,33 @@
+{
+    "Type": "query/GetMeshFaceNormals",
+    "Description": "Get normals of the faces of a mesh.",
+    "Inputs": {
+        "Mesh": {
+            "Type": "Object"
+        },
+    },
+    "Outputs": {
+        "Normals": {
+            "Type": "[]*"
+        },
+    },
+    "Require": {
+        "js": {
+            "src": "GetMeshFaceNormals.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Mesh",
+        ],
+        "OutputOrder": [
+            "Normals",
+        ]
+    },
+    "Tags": [],
+    "UserTags": []
+}

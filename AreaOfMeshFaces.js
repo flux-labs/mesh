@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Find the area of each surface of a mesh
+ * Find the area of each faces of a mesh
  *
  * @author Karen Hao <karen@flux.io>
  * @version 0.0.1
@@ -9,7 +9,7 @@
  * @param {Object} A mesh object
  * 
  * @return {Object} A return object with an areas property
- *     that contains an array of areas for each surface of the mesh
+ *     that contains an array of areas for each faces of the mesh
  */
 
 

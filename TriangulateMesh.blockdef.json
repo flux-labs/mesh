@@ -1,0 +1,32 @@
+{
+    "Type": "mutation/TriangulateMesh",
+    "Description": "Triangulate the quad faces of a mesh.",
+    "Inputs": {
+        "Mesh": {
+            "Type": "Object"
+    },
+    "Outputs": {
+        "Mesh": {
+            "Type": "Object"
+        },
+    },
+    "Require": {
+        "js": {
+            "src": "TriangulateMesh.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "in",
+        ],
+        "OutputOrder": [
+            "out",
+        ]
+    },
+    "Tags": [],
+    "UserTags": ["Face", "Triangle"]
+}

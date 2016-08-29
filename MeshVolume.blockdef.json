@@ -1,0 +1,32 @@
+{
+    "Type": "query/MeshVolume",
+    "Description": "Get the volume of a mesh.",
+    "Inputs": {
+        "Mesh": {
+            "Type": "Object"
+        },
+    },
+    "Outputs": {
+        "Mesh": {
+            "Type": "Object"
+    },
+    "Require": {
+        "js": {
+            "src": "MeshVolume.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Mesh"
+        ],
+        "OutputOrder": [
+            "Mesh",
+        ]
+    },
+    "Tags": [],
+    "UserTags": ["Mass","Size"]
+}

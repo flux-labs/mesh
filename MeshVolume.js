@@ -1,8 +1,14 @@
 'use strict';
 
 /**
- * Code block template.
+ * Find the volume of a mesh
  *
+ * @author Karen Hao <karen@flux.io>
+ * @version 0.0.1
+ *
+ * @param {Object} A mesh object
+ * 
+ * @return {Number} Total Volume of a mesh
  */
  
 function tetraVolume(vertices) {

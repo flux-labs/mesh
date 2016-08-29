@@ -1,0 +1,32 @@
+{
+    "Type": "query/MeshArea",
+    "Description": "Get the area of a mesh",
+    "Inputs": {
+        "Mesh": {
+            "Type": "Object"
+        },
+    },
+    "Outputs": {
+        "Area": {
+            "Type": "Number"
+    },
+    "Require": {
+        "js": {
+            "src": "MeshArea.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Mesh",
+        ],
+        "OutputOrder": [
+            "Area",
+        ]
+    },
+    "Tags": [],
+    "UserTags": ["Area", "Surface"]
+}

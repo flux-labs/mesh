@@ -8,10 +8,8 @@
  *
  * @param {Object} A mesh object
  * 
- * @return {Object} A return object with three properties:
- *     allEdges: an array of all edges of the mesh;
- *     nakedEdges: an array of edges with only one incident face;
- *     internalEdges: an array of edges with only two incident faces
+ * @return {Object} Return a list of vectors, faces' normals.
+ *
  */
 
 
