@@ -1,54 +1,54 @@
 # mesh
 A collection of experimental mesh manipulation functions for Flux code blocks. These are candidates for addition to the Flux block library. 
 
-### `areaOfMesh`
-#### parameters:
+### `MeshArea`
+#### Input:
 * `mesh`
 
-#### returns:
-area of a mesh as a float
+#### Outputs:
+Area of a mesh as a float
 
-### `areaOfEachMeshSurface`
-#### parameters:
-* `mesh`
+### `AreOfMeshFaces`
+#### Inputs:
+* `Mesh`
 
-#### returns:
-an array of areas for the different surfaces of a mesh
+#### Outputs:
+An array of areas for the different surfaces of a mesh
 
-### `volumeOfMesh`
-#### parameters:
-* `mesh`
+### `MeshVolume`
+#### Inputs:
+* `Mesh`
 
-#### returns:
-volume of a closed mesh as a float (will not calculate the right volume for an open mesh)
+#### Outputs:
+Volume of a closed mesh as a float (will not calculate the right volume for an open mesh)
 
-### `orderVerticesOfMesh`
-#### parameters:
-* `mesh`
+### `OrderMeshVertices`
+#### Inputs:
+* `Mesh`
 
-#### returns:
-vertices of each mesh face in clockwise order as a list of points
+#### Outputs:
+Vertices of each mesh face in clockwise order as a list of points
 
-### `meshEdges`
-#### parameters:
-* `mesh`
+### `GetMeshEdges`
+#### Inputs:
+* `Mesh`
 
-#### returns:
+#### Outputs:
 * `allEdges`: all edges of each mesh face as a list of lines
 * `externalEdges`: only edges with one incident face
 * `nonplanarEdges`: only edges whose two incident faces are not planar
 
-### `triangulateMesh`
-#### parameters:
+### `TriangulateMesh`
+#### Inputs:
 * `In`: mesh with convex faces with vertices >= 3
 (note that this algorithm only deals with convex polygons; fortunately, it seems the sketchup plugin automatically triangulates concave faces)
 
-#### returns:
+#### Outputs:
 * `Out`: mesh with triangulated faces
 
-### `getFaceNormals`
-#### parameters:
-* `mesh`
+### `GetMeshFaceNormals`
+#### Inputs:
+* `Mesh`
 
-#### returns:
-normal of each face as a list of lists
+#### Outputs:
+Normal of each face as a list of lists
