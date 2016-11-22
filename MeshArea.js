@@ -26,7 +26,7 @@ function run(mesh) {
 	
 	
 return {
-	area: totalArea
+	Area: totalArea
 };
 
 }

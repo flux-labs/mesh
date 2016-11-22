@@ -4,12 +4,12 @@
     "Inputs": {
         "Mesh": {
             "Type": "Object"
-        },
+        }
     },
     "Outputs": {
         "Edges": {
             "Type": "Object"
-        },
+        }
     },
     "Require": {
         "js": {
@@ -22,10 +22,10 @@
     },
     "Display": {
         "InputOrder": [
-            "Mesh",
+            "Mesh"
         ],
         "OutputOrder": [
-            "Edges",
+            "Edges"
         ]
     },
     "Tags": [],

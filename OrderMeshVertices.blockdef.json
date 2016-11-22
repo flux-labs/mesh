@@ -4,10 +4,12 @@
     "Inputs": {
         "Mesh": {
             "Type": "Object"
+        }
     },
     "Outputs": {
         "Mesh": {
             "Type": "Object"
+        }
     },
     "Require": {
         "js": {
@@ -20,10 +22,10 @@
     },
     "Display": {
         "InputOrder": [
-            "Mesh",
+            "Mesh"
         ],
         "OutputOrder": [
-            "Mesh",
+            "Mesh"
         ]
     },
     "Tags": [],
