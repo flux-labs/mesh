@@ -3,8 +3,8 @@
 /**
  * Get the area of a mesh
  *
- * @author Karen Hao <karen@flux.io>
- * @version 0.0.1
+ * @author Karen Hao <karen@flux.io> & Thomas Trinelle <thomas@flux.io>
+ * @version 0.0.5
  *
  * @param {Object} A mesh object
  * 
@@ -16,19 +16,24 @@ function run(mesh) {
 	var totalArea = 0;
 	var faces = mesh.faces;
 	var vertices = mesh.vertices;
+	var polygones = [];
 	faces.forEach(function(face) {
 	    var points = face.map(function(index) {
 	        return vertices[index];
 	    });
 	    var poly = new geom.Polygon(points);
-	    totalArea += poly.area();
+	    if (isNaN(poly.area()) != true){
+		    totalArea += poly.area();
+	    }
+	    /*
+	    else {
+	    	console.log(poly.area())
+	    }
+	    */
 	});
-	
-	
-return {
-	Area: totalArea
-};
-
+	return {
+		area: totalArea
+	};
 }
 
 module.exports = {
